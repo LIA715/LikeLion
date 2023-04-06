@@ -8,5 +8,25 @@ public class PrimitiveType {
 
         //범위에 맞지 않은 숫자를 넣으면 오류 발생
         int b=10;
+
+
+        //실수형
+        //1. double (8bytes) : 소수점 이하 15자리까지
+        //2. float (4bytes) : 7자리
+        double a = 1.23;
+        float c = 9.45f; //실제로는 f 표현 안됨
+        System.out.println(a);
+        System.out.println(c);
+
+
+        //문자형 : 문자 1개만 다룰 수 있음
+        //char (2bytes)
+        char char_1 ='a';
+        char char_2=97; //아스키코드
+
     }
 }
+
+
+
+
