@@ -21,8 +21,21 @@ public class PrimitiveType {
 
         //문자형 : 문자 1개만 다룰 수 있음
         //char (2bytes)
+        //아스키, 유니코드 체계도 가능
         char char_1 ='a';
-        char char_2=97; //아스키코드
+        char char_2 = 97; //아스키코드
+        char char_3 = 0X61; //유니코드
+
+
+        //논리형 : 참, 거짓 의미
+        //boolean (1byte)
+        boolean bool_1 = true;
+        boolean bool_2 = false;
+        boolean bool_3 = (100 < 0); //논리적으로 구분 가능한 식 넣어줘
+
+        System.out.println(bool_1);
+        System.out.println(bool_2);
+        System.out.println(bool_3);
 
     }
 }
