@@ -26,11 +26,13 @@ public class Operators {
         System.out.println(a>b);
         System.out.println(a<b);
 
+        //비교
         System.out.println(a>=b);
         System.out.println(a<=b);
 
         //=대입연산자. 우측 값을 좌측에 대입. ==비교연산자
         System.out.println(a==b);
         System.out.println(a!=b);
+
     }
 }
