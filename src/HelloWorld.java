@@ -4,5 +4,6 @@ public class HelloWorld {
 
         System.out.println("Hello World");
         System.out.println("Hello World");
+        System.out.println("intelliJ 연동 성공");
     }
 }
