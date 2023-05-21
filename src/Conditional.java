@@ -22,5 +22,22 @@ public class Conditional {
         } else {
             System.out.println("else");
         }
+
+        int c = 10;
+
+        switch (c + 1){
+            case 11:
+                System.out.println("c+1=11");
+                break; //switch 종료
+            case 9:
+                System.out.println("c+1=9");
+                break;
+            case 10:
+                System.out.println("c+1=10");
+                break;
+            default:
+                System.out.println("모든 switch 조건에 만족하지 않는 경우");
+
+        }
     }
 }
