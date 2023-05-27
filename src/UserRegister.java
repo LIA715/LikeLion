@@ -82,6 +82,29 @@ public class UserRegister {
             //이메일
             System.out.print("이메일: ");
             String email = sc.nextLine();
+
+            user.put("username", username);
+            user.put("password",password);
+            user.put("name", name);
+            user.put("birth_date",birth_date);
+            user.put("email",email);
+
+            users.add(user); //arraylist에 hashmap user를 추가
+
+            System.out.println("----------------------");
+            System.out.println(user.get("name") +"님, 가입을 환영합니다. ");
+            System.out.println("ID는 " + user.get("username") + "입니다");
+            System.out.println("----------------------");
+
+            System.out.println("회원가입을 이어서 하시겠습니까? \ny: 진행   n:취소");
+            System.out.print(">> ");
+            String register_again = sc.nextLine();
+
+            if(register_again.equalsIgnoreCase("y")){
+                ;
+            }else if(register_again.equalsIgnoreCase("n")){
+                System.exit(0);
+            }
         }
     }
 }
