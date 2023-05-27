@@ -31,8 +31,6 @@ public class BankAccount {
         this.balance = balance;
         this.password = password;
         this.isDormant = isDormant;
-
-
     }
 
 }
