@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class UserRegister {
@@ -29,7 +31,57 @@ public class UserRegister {
             }else {
                 System.out.println("입력값을 확인해주세요.");
             }
+        }
 
+        ArrayList users = new ArrayList();
+        //while문 무조건 실행되게 true로 지정
+        while (true) {
+
+            HashMap user = new HashMap();
+
+            //ID
+            System.out.print("ID: ");
+            String username = sc.nextLine();
+
+            //PW
+            String password = "";
+            while (true) {
+                System.out.print("PW: ");
+                password = sc.nextLine();
+                System.out.print("PW 확인: ");
+                String password_confirm = sc.nextLine();
+
+                if(password.equals(password_confirm)){
+                    break;
+                }else{
+                    System.out.println("==================");
+                    System.out.println("패스워드가 일치하지 않습니다.");
+                    System.out.println("패스워드를 확인해주세요.");
+                    System.out.println("==================");
+                }
+            }
+
+            //이름
+            System.out.print("성명: ");
+            String name = sc.nextLine();
+
+            //생년월일(6자리)
+            String birth_date ="";
+            while (true){
+                System.out.print("생년월일(6자리): ");
+                birth_date = sc. nextLine();
+                if(birth_date.length() ==6) {
+                    break;
+                }else {
+                    System.out.println("==================");
+                    System.out.println("생년월일 자릿수가 올바르지 않습니다.");
+                    System.out.println("==================");
+                }
+            }
+
+            //이메일
+            System.out.print("이메일: ");
+            String email = sc.nextLine();
         }
     }
 }
